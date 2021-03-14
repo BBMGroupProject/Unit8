@@ -90,7 +90,7 @@ Connect users with black-owned businesses. Garner more support and income for bl
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://drive.google.com/drive/u/0/recent" width=600>
+<img src="https://github.com/BBMGroupProject/Unit8/blob/main/IMG-2846.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
