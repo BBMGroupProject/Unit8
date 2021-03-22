@@ -97,10 +97,99 @@ Connect users with black-owned businesses. Garner more support and income for bl
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+## Login/Sign Up
+
+| Property | Type   | Description                            | 
+| -------- | ------ | -------------------------------        | 
+| password | String | Unique id for the user to login/signup |
+| username | String | Unique id for the user to login/signup | 
+| LoginBTN | Button | Button for users to login              | 
+| SignUpBTN| Button | Button for user to sign up             | 
+
+
+## Home
+
+
+| Property     | Type   | Description                        |
+| ------------ | ------ | ---------------------------------- |
+| businessName | String | Name of business                   |
+| location     | String | Business address                   |
+| description  | String | Description of business            |
+| category     | String | Category of business               |
+| review       | String | User can view and leave reviews    |
+| website      | String | Link to business website           |
+| reviewCount  | Number | Number of reviews under post       |
+| image        | Image  | Image of business                  |
+| createBTN    | Button | Button for user to add businesses  |
+| isFavorited  | Bool   | Records when presses favorite icon |
+| favorite_img | Icon   | User can favorite business         |
+
+
+## Categories
+| Property  | Type  | Description                                         |
+| --------  | ----- | ----------------------------------------------------|
+|categoryBTN| Button|User clicks on this to view the different categories |
+|fashionBTN | Button|User clicks on this to view fashion related business |
+|foodBTN    | Button|User clicks on this to view food related business    |
+|serviceBTN | Button|User clicks on this to view services related busines |
+|productsBTN| Button|User clicks on this to view product related business |
+
+## Favorites
+
+
+| Property     | Type   | Desciption                                      |
+| ------------ | ------ | ----------------------------------------------- |
+| favorite_img | Icon   | Signifies user favorites business               |
+| businessName | String | Name of business                                |
+| favoriteBTN  | Button | User clicks this button to view favorite screen |
+
+## Add Business
+
+
+
+| Property       | Type   | Description                      |
+| -------------- | ------ | -------------------------------- |
+| addDescription | String | Input of description of business |
+| addLink        | String | Input of website link            |
+| addLocation    | String | Input of business address        |
+| addCategory    | String | Input of business category       |
+| addBusiness    | String | Input of business name           |
+| addPhoto       | File   | Image of business                |
+
+## Profile
+
+
+
+| Property  | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| reviewBTN | Button | Holds current list of the user's reviews |
+| photo     | File   | Uploaded image for user profile picture  |
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+List of network requests by screen:
+
+* Home feed screen
+1. (Create/POST) Create a new review on business post
+2. (Delete) Delete review
+3. (Create) Create a new "liked" post
+4. (Delete) Undo "liked" post
+
+* Profile screen
+1. (Read/GET) Query logged in user object
+2. (Update/PUT) Update profile picture
+3. (Update/PUT) Update user's reviews
+
+* Favorites screen
+1. (Update/PUT) Update user's favorites
+2. (Delete) Remove favorites
+3. (Read/GET) Save user's current favorites
+
+* Login/Sign up page
+1. (Read/GET) Query logged in user object
+2. (Read/GET) Query signed in user object
+
+
